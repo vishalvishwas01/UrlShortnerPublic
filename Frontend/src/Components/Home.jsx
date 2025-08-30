@@ -73,7 +73,7 @@ function Home() {
                 {shortId && <button onClick={handleCopy} className="cursor-pointer pb-2 text-gray-200">{copied ? "Copied!" : "Click to copy"}</button>}
             </div>
 
-            <div className="w-full h-full border-2 border-gray-400 px-2 rounded-2xl shadow-2xl mb-2 flex flex-col justify-start items-center ">
+            <div className="w-full h-80 sm:h-full border-2 border-gray-400 px-2 rounded-2xl shadow-2xl mb-2 flex flex-col justify-start items-center ">
                 <div className="w-full h-auto text-2xl font-semibold text-center">Analytics</div>
                 <div className="w-full h-auto flex flex-col justify-start items-start gap-4">      
                     <div className="w-full flex text-center justify-center items-center text-xl">Total clicks: {analytics?.totalClicks || 0}</div>
