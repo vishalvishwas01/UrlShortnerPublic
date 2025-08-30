@@ -77,7 +77,7 @@ function Home() {
                 <div className="w-full h-auto text-2xl font-semibold text-center">Analytics</div>
                 <div className="w-full h-auto flex flex-col justify-start items-start gap-4">      
                     <div className="w-full flex text-center justify-center items-center text-xl">Total clicks: {analytics?.totalClicks || 0}</div>
-                        <div className="flex flex-col gap-1 h-85 sm:h-100 w-full overflow-auto scrollbar-hide">
+                        <div className="flex flex-col gap-1 h-70 sm:h-100 w-full overflow-auto scrollbar-hide">
                             {/*  */}
                             <div className="text-sm border-b-2 pb-2 w-full text-gray-700 flex justify-between items-start">
                                 <div className="flex gap-2 flex-col justify-start  items-center">
