@@ -10,7 +10,7 @@ function Home() {
 
     const postData = async () => {
     try {
-      const res = await fetch("http://localhost:8001/url", {
+      const res = await fetch("https://urlshortner-ccuk.onrender.com/url", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: value }),
@@ -27,7 +27,7 @@ function Home() {
   const getData = async () => {
     if (!shortId) return;
     try {
-      const res = await fetch(`http://localhost:8001/url/analytics/${shortId}`);
+      const res = await fetch(`https://urlshortner-ccuk.onrender.com/url/analytics/${shortId}`);
       const data = await res.json();
       console.log("Analytics:", data);
       setAnalytics(data);
@@ -50,7 +50,7 @@ function Home() {
 
     const handleCopy = () => {
     if (!shortId) return;
-    const shortUrl = `http://localhost:8001/${shortId}`;
+    const shortUrl = `https://urlshortner-ccuk.onrender.com/${shortId}`;
     navigator.clipboard.writeText(shortUrl)
       .then(() => {
         setCopied(true);
