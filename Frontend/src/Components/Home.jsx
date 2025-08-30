@@ -69,7 +69,7 @@ function Home() {
             <input value={value} onChange={(e)=>setValue(e.target.value)} className='shadow-lg border-2 border-gray-400 w-full rounded-xl px-4 py-2 outline-0 decoration-0' placeholder='https://www.shorturl.com'/>
             <button onClick={postData} className='w-full h-auto shadow-2xl rounded-xl py-2 text-white  text-2xl cursor-pointer bg-gradient-to-r from-fuchsia-600 hover:from-fuchsia-800 to-indigo-500 hover:to-indigo-700 transition-colors duration-500 ease-in-out '>Shorten it</button>
             <div className='shadow-2xl bg-gray-400 gap-5 rounded-xl py-2 px-4 w-full h-auto flex flex-col justify-start items-center'>
-                {shortId ? <div className='text-xl'>http://localhost:8001/{shortId}</div> : <div>No url shorten!</div>}
+                {shortId ? <div className='text-xl'>https://urlshortner-ccuk.onrender.com/{shortId}</div> : <div>No url shorten!</div>}
                 {shortId && <button onClick={handleCopy} className="cursor-pointer pb-2 text-gray-200">{copied ? "Copied!" : "Click to copy"}</button>}
             </div>
 
